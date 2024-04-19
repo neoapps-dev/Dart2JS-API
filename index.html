@@ -8,7 +8,7 @@
 <body>
     <h1>Dart Compiler</h1>
     <form id="compilerForm">
-        <label for="uri">Dart File URL:</label>
+        <label for="uri">Dart File.URL:</label>
         <input type="text" id="uri" name="uri" required><br>
         <label for="pid">Output File Name:</label>
         <input type="text" id="pid" name="pid" required><br>
@@ -35,7 +35,7 @@
                     // Handle compiled JavaScript content
                     console.log('Compiled JavaScript:', compiledContent);
                 } else {
-                    console.error('Compilation failed:', response.statusText);
+                    console.error('Compilation failed:', compiledContent);
                 }
             } catch (error) {
                 console.error('Error:', error);
