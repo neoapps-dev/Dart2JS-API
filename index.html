@@ -8,7 +8,7 @@
 <body>
     <h1>Dart Compiler</h1>
     <form id="compilerForm">
-        <label for="uri">Dart File.URL:</label>
+        <label for="uri">Dart File.....URL:</label>
         <input type="text" id="uri" name="uri" required><br>
         <label for="pid">Output File Name:</label>
         <input type="text" id="pid" name="pid" required><br>
@@ -22,7 +22,7 @@
             const pid = document.getElementById('pid').value;
 
             try {
-                const response = await fetch('/api/compileDart', {
+                const response = await fetch('compileDart.js', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
